@@ -64,15 +64,70 @@
     .icon {
       font-size: 1em;
     }
-    
+
+    .blog:hover,
+    .blog::after {
+      background-color: #ffbd2f;
+    }
+
+    .email:hover,
+    .email::after {
+      background-color: #23c8c8;
+    }
+
+    .facebook:hover,
+    .facebook::after {
+      background-color: #4267B2;
+    }
+
     .instagram:hover,
     .instagram::after {
       background: #f86ee1;
     }
-    
+
+    .linkedin:hover,
+    .linkedin::after {
+      background-color: #0e76a8;
+    }
+
+    .twitter:hover,
+    .twitter::after {
+      background-color: #26a7de;
+    }
+
+    .reddit:hover,
+    .reddit::after {
+      background-color: #ff4500;
+    }
+
+    .tiktok:hover,
+    .tiktok::after {
+      background-color: #ff0050;
+    }
+
     .youtube:hover,
     .youtube::after {
       background-color: #FF0000;
+    }
+
+    .pinterest:hover,
+    .pinterest::after {
+      background-color: #c8232c;
+    }
+
+    .telegram:hover,
+    .telegram::after {
+      background-color: #2AABEE;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
     }
   </style>
 
@@ -85,20 +140,44 @@
     <div class="wrapper">
 
 
+
+
+
+
+
+
+
+
       <!-- Start instagram Icon -->
       <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
         <span class="icon"><i class="fab fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- Start youtube Icon -->
       <div id="youtube" onclick="navigate(this.id)" class="fill youtube">
         <span class="icon"><i class="fab fa-youtube"></i></span>
       </div>
       <!-- End youtube Icon -->
 
-      
+
+
+
+
+
+
     </div>
 
 
@@ -109,14 +188,41 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-   
+        if (id === "blog")
+          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "email") {
+          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+        }
+        else if (id === "facebook") {
+          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
+        }
         else if (id === "instagram") {
           window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "twitter") {
+          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "reddit") {
+          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
         }
         else if (id === "youtube") {
           window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
         }
+        else if (id === "pinterest") {
+          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "telegram") {
+          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
       }
+
     </script>
 
 
